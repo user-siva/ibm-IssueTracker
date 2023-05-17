@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body style="color:blue">
+    <h1 id="th"><i><b>ONLINE COMPLAINT MANAGEMENT SYSTEM</b></i></h1>
+    <div class="nav">
+<nav>
+    <ul>
+       <li><a href="#"><h2>HOME</h2></a></li>
+       <li><a href="#"><h2>USER_LOGIN</h2></a></li>
+       <li><a href="#"><h2>AGENT_LOGIN</h2></a></li>
+       <li><a href="#"><h2>ABOUT</h2></a></li>
+       <li><a href="#"><h2>CONTACT</h2></a></li>
+    </ul>
+  
+</nav></div>
+<div class="box">
+    
+    <div class="form">
+        <p>OUR TEAM IS HERE TO HELP YOU</p>
+    </div>
+</div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+    p{
+        bottom: 10%;
+        left: 110px;
+        position: relative;
+        color: azure;
+        font-size: 36px;
+        font-family: 'Fugaz One', cursive;
+    }
+        
+    #th{
+        padding-left: -50px;
+        font-size: 32px;
+        color: white;
+    }
+    .box{
+        position: relative;
+        width: 700px;
+        height: 320px;
+        background: rgb(37, 36, 36);
+        box-shadow: 0 8px 32px 0 rgba(5, 5, 5, 0.459);
+        border-left: 1px solid rgba(255,255,255,.3);
+        border-right: 1px solid rgb(37, 36, 36);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left: 28%;
+        margin-top: 180px;
+    }
+    .box::before{
+        position: absolute;
+        content: '';
+        width: 80px;
+        margin-left: 90%;
+        height: 620px;
+        margin-top: -30%;
+        top: -100%;
+        left: -50%;
+        transform-origin: bottom right;
+        background: linear-gradient(0deg,transparent, #45f3ff,#45f3ff);
+        animation: roat 6s linear infinite;
+    }    
+    .box::after{
+        position: absolute;
+        content: '';
+        width: 100px;
+        margin-left: 90%;
+        margin-top: -30%;
+        height: 620px;
+        top: -100%;
+        left: -50%;
+        transform-origin: bottom right;
+        background: linear-gradient(0deg,transparent, #45f3ff,#45f3ff);
+        animation: roat 6s linear infinite;
+        animation-delay: -3s;
+    }    
+    @keyframes roat{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+
+h2{
+
+padding: 30px;
+font-size:24px;
+}   
+
+
+body{
+    background-color: rgb(37, 36, 36);
+}
+.form{
+    position: absolute;
+    inset: 4px;
+    background:rgb(37, 36, 36);
+    box-shadow: 0 8px 32px 0 rgba(5, 5, 5, 0.459);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-right: 1px solid rgba(255,255,255,.3);
+    z-index: 10;
+    padding:100px;
+    margin-left: -140px;
+}
+
+
+
+
+
+
+.nav{
+    float: right;
+    margin-right: 50px;
+    color: brown;
+    margin-top: -10px;
+    
+}
+a{
+    
+    text-decoration: none;
+}
+li{
+    position: relative;
+    border-color: brown;
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -30px;
+}
+h2:hover{
+    margin-top: -10px;
+    background-color: rgb(13, 9, 240);
+    border-radius: 10px;
+    padding: 15px;
+
+    color:white;
+}
+nav{
+    height: 69px;
+    width: 150%;
+    margin-left: -13%;
+    padding-left: 20%;
+    background: rgba(13, 202, 235, 0.884);
+    box-shadow: 0 8px 32px 0 rgba(5, 18, 197, 0.459);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-right: 1px solid rgba(255,255,255,.3);
+    
+}
+a:hover{
+    background-color: rgb(13, 9, 240);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 10px;
+}
+</style>
+</body>
+</html>
