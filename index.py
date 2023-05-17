@@ -8,12 +8,16 @@ print("connecting...")
 conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=0c77d6f2-5da9-48a9-81f8-86b520b87518.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;PORT=31198;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=rzm08887;PWD=NM02c9OExoYdTRH2;", "", "")
 print("connected")
 
-@app.route("/", methods=['POST', 'GET'])
+@app.route('/')
+def frontpage():
+	return render_template('frontpage.html')
+
+@app.route("/login", methods=['POST', 'GET'])
 def login():
 	msg = ''
 	if request.method == "POST":
-		USERNAME = request.form["username" ]
-		PASSWORD = request.form ["password" ]
+		USERNAME = request.form["username"]
+		PASSWORD = request.form ["password"]
 		sq1 = "SELECT * FROM USERN WHERE USERNAME=? AND PASSWORD=?"
 		stmt = ibm_db.prepare(conn, sq1)
 		ibm_db.bind_param(stmt, 1, USERNAME)
@@ -116,11 +120,12 @@ def register():
 			ibm_db.bind_param(prep_stmt, 5, PASSWORD)
 			ibm_db.execute(prep_stmt)
 			msg = "You have successfully registered !"
-	return render_template('login.htm1', msg=msg)
+	return render_template('register.html', msg=msg)
 
 
-@app.route('/admin _register', methods=['POST', "GET"])
+@app.route('/admin_register', methods=['POST', "GET"])
 def admin_register():
+	msg=''
 	if request.method == "POST":
 		USERNAME = request.form["Username" ]
 		EMAIL = request.form["Email"]
@@ -154,7 +159,7 @@ def admin_register():
 			ibm_db.bind_param(prep_stmt, PASSWORD)
 			ibm_db.execute(prep_stmt)
 			msg = "You have successfully registered"
-			return render_template( 'admin_login.html',msg=msg)
+			return render_template('admin_login.html',msg=msg)
 	return render_template('admin_register.html',msg=msg)
 
 
@@ -240,7 +245,11 @@ def home():
 		ibm_db.bind_param(stmt1, 6, LONG)
 		ibm_db.bind_param(stmt1,IMAGE_ID)
 		ibm_db.execute(stmt1)
+	return render_template('adminhomt.html')
 
+@app.route('/post_compliant')
+def post_compliant():
+	return render_template('post_com.html')
 
 if __name__=="__main__":
 	app.run(debug=True)

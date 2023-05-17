@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+body{
+    background-color: rgb(37, 36, 36);
+    overflow-x: hdden;
+    }
+table,td,th{
+    border: 2px solid salmon;
+    margin-top: 8%;
+}
+table{
+    width: 90%;
+}
+tr{
+    width: 0%;
+    color: aqua;
+}
+#b{
+    width: 30px;
+    border-radius: 5px;  
+}
+td{
+    padding-left: 10px;
+}
+#a{
+    margin-left: -10px;
+    
+}
+h1{
+    color: rgb(253, 16, 16);
+    font-size: 38px;
+    position: fixed;  
+    margin-top: -4%;           
+}
+hr{
+    color: rgb(4, 0, 255);
+    margin-bottom: 2px;
+    margin-top: 5%;
+    width: 115%;
+}

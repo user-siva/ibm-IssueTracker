@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Online_Complaints</title>
+<link href="{{url_for('static',filename='css/post_com.css')}}" rel="stylesheet" type="text/css">
+<body>
+<div class="container">
+<div class="card">
+    <form>
+        <h1>Online_Complaints </h1><hr><br><br>
+        <label>Type of issue:</label>
+        <select name="role" id="role">
+            <option>Electrician</option>
+            <option>Plumber</option>
+            <option>Transportation worker</option>
+        </select><br><br>
+        <label>Upload the photo</label><br><br>
+    <input type="file" id="n3"><br><br>
+    <label>Describe your issue in Detail manner</label><br>
+    <textarea rows="4" cols="25" id="n1" placeholder="Problem Description"></textarea><br><br>
+    <br>
+    <label>Latitude:</label><br>
+    <input type="number"><br><br>
+    <label>Longitude:</label><br>
+    <input type="number"><br><br>
+    <label>Get Current Location:</label><button>CLICK ON ME</button><br><br>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126198.50975930062!2d77.67350795350195!3d8.7196861340574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0411625053c519%3A0xad791b361b359a4d!2sTirunelveli%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1684307344793!5m2!1sen!2sin" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p> <br><br>                  
+     <button onclick="click()">SUBMIT DETAILS</button></h4>
+
+
+    </form>
+</div>
+</div>
+</body>
+</html>

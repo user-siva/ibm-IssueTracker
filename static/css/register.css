@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+    body{
+    background-color: rgb(37, 36, 36);
+    margin-left: -3%;
+    }
+    nav{
+    width: 100%;
+    height: 92px;
+    margin: 34px;
+    background:transparent;
+    padding: 3px;
+    position:fixed;
+    opacity: 1.5;
+    }
+    h1{
+    font-size: 70px;
+    letter-spacing: 2px;
+    padding-left:35%;
+    padding-top: 0%;
+    color:rgb(190, 10, 245);
+    }
+    .container
+    {
+    top: 60%;
+    left: 40%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    }
+    .card
+    {
+    width: 150%;
+    height: 300px;
+    background:linear-gradient(to left,rgb(245, 13, 245),rgba(2, 2, 2, 0.466));
+    box-shadow: 0 8px 32px 0 rgba(151, 141, 146, 0.459);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-right: 1px solid rgba(255,255,255,.3);
+    background-size:150%;
+    border-radius:5%;
+    padding:78px;
+    padding-top:40px;
+    padding-bottom: 130px;
+    opacity:1.5;
+    }
+    img{
+    height:100px;
+    width:100px;
+    padding-left:100px,100px;
+    padding-top:100px,100px;
+    border-radius:50px;
+    top: 21%;
+    left: 46%;
+    position:absolute;
+    opacity:1.5;
+    }
+    label{
+        color: rgb(7, 255, 172);
+    }
+    #name
+    {
+    border:navajowhite;
+    font-size:18px;
+    width: 100%;
+    height: 30px;
+    color:rgba(240, 244, 253, 0.911);
+    background-color:transparent;
+    border-bottom:1px solid rgb(2, 25, 29);
+    margin-top: 20px;
+    margin-bottom:23px;
+    padding:2px;
+    opacity:0.9;
+    }
+    #button
+    {
+    width: 190px;
+    height: 40px;
+    margin-left: 33%;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgba(6, 241, 151, 0.966);
+    color:rgb(8, 8, 8);
+    }
+    a{
+    color:rgb(7, 224, 7);
+    }
+    hr{
+        width: 100%;
+        left: 20px;
+        border-color: rgba(241, 6, 221, 0.856);
+    }
+    #button:hover{
+     background-color: rgb(8, 12, 226);
+    color: aliceblue;
+    }
+    h3{
+        margin-top: -25px;
+        margin-left: 165px;
+        font-size: 21px;
+    }
+    h4{
+        margin-top: 20px;
+        font-size: 21px;
+    }
+    
+

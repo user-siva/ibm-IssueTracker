@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>login</title>
+<link href="{{url_for('static',filename='css/admin.css')}}" rel="stylesheet" type="text/css">
+<nav>
+<div><h1><i>Admin_Login<i></h1></div><hr>
+</head>
+</nav>
+<body>
+<div class="container">
+<div class="card">
+<form method="post">
+<input type="text" name="username" placeholder="username" id="name" ><br>
+<input type="password" name="pass" placeholder="password" id="name"><br><br>
+<a href="/admin_register"><h2>register<h2></a><br><br>
+<button id="button" href="/admin_register"><h2>submit</h2></button> 
+<p id="da">  </p>
+</form>
+</div>
+</div>
+<img src="{{url_for('static',filename='images/22.jpeg')}}">
+</body>
+</html>

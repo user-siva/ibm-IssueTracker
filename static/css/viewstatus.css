@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+body{
+    background-color: rgb(37, 36, 36);
+    overflow-x: hidden;
+    }
+table,td,th{
+    border: 2px solid salmon;
+    
+    
+}
+table{
+    width: 100%;
+}
+tr{
+    width: 0%;
+    color: aqua;
+}
+#b{
+    width: 30px;
+    border-radius: 5px;  
+}
+td{
+    padding-left: 10px;
+}
+#a{
+    padding-left: 20px;
+    width: 85%;
+    
+}
+h1{
+    color: rgb(253, 16, 16);
+    font-size: 38px;
+    margin-top: 20px;
+}
+hr{
+    color: aqua;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}

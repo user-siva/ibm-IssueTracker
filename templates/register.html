@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>login</title>
-<link href="register.css"rel="stylesheet"type="text/css">
+<link href="{{url_for('static',filename='css/register.css')}}" rel="stylesheet" type="text/css">
 <nav>
 <div><h1><i>Register With Us <i></h1></div><hr>
 </head>
@@ -18,7 +18,7 @@
 <label ><h2>password:</h2></label>
 <input type="password" name="pass" placeholder="Enter password" id="name" ><br>
 <button id="button" href="/register"><h2>register</h2></button> <br><h4>Have an account? </h3>
-<a href="login.html"><h3>Login<h3></a><br><br>
+<a href="/login"><h3>Login<h3></a><br><br>
 </form>
 </div>
 </div>
